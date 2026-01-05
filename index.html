@@ -1,24 +1,447 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>My Portfolio</title>
-
-  <!-- Link CSS -->
-  <link rel="stylesheet" href="style.css" />
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Durga Prasanna Peddireddi - Salesforce Data Engineer</title>
+  <meta name="description" content="Prasanna — Software developer. Web, ML, Salesforce, full-stack projects.">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-  <header>
-    <h1>Prasanna Peddireddi</h1>
-    <p>Software Developer</p>
+  <!-- NAV -->
+  <header class="site-header">
+    <div class="container header-inner">
+      <div class="brand"><a href="#hero"><b>Durga Prasanna Peddireddi</b></a></div>
+
+      <!-- nav moved slightly right per request -->
+      <nav class="primary-nav" aria-label="Main navigation">
+        <a href="#hero"><b>Home</b></a>
+        <a href="#about"><b>About</b></a>
+        <a href="#experience"><b>Experience</b></a>
+        <a href="#projects"><b>Projects</b></a>
+        <a href="#skills"><b>Skills</b></a>
+        <a href="#certifications"><b>Certifications</b></a>
+        <a href="#contact"><b>Contact</b></a>
+      </nav>
+    </div>
   </header>
 
-  <section id="about">
-    <h2>About Me</h2>
-    <p>Clean, innovative, and modern portfolio.</p>
+  <main>
+    <!-- FULL VIDEO HERO -->
+<section id="hero" class="video-hero">
+
+    <!-- Background Video -->
+    <video class="hero-video" autoplay muted loop playsinline>
+        <source src="assets/HeroLanding.mp4" type="video/mp4">
+    </video>
+
+    <!-- Overlay for readability -->
+    <div class="hero-overlay"></div>
+
+     <!-- Center Content -->
+     <div class="hero-center-content">
+        <h1>Hi, I’m <span class="accent">Durga Prasanna </span></h1>
+
+        <p class="hero-sub">
+            <span><b>Salesforce Engineering & Integrations • Data Engineering & ML Analytics • Python/SQL Automation</span>
+            </b></p>        
+
+        <div class="hero-ctas">
+            <a class="btn btn-primary" href="#about">Explore</a>
+            <a class="btn btn-primary" href="resume.pdf" download>Download Resume</a>
+            <a class="btn btn-primary" href="#contact">Connect With Me →</a>
+        </div>
+    </div>
+
+</section>
+ 
+  <!-- ABOUT -->
+<section id="about" class="section section-white about-centered">
+    <div class="container about-centered-container">
+  
+      <h2>About Me</h2>
+  
+      <p>
+        I’m a Salesforce-focused Software & Data Engineer working at the intersection of CRM platforms, data engineering, and applied AI. I design and build scalable systems using Apex, Python, SQL, and API-driven integrations to streamline business workflows and transform operational data into actionable insights.
+      </p>
+      <p>
+      My work focuses on designing end-to-end solutions that connect CRM systems with external services and data platforms, enabling reliable data ingestion, transformation, and analytics-ready outputs. I’ve built custom Salesforce functionality, automated data pipelines, and cross-platform integrations with an emphasis on clean architecture, performance, and maintainability.
+      </p>
+      <p>
+        I’m particularly interested in building data-centric CRM platforms, including ML-assisted analytics, intelligent workflows, and AI-enabled decision support. I enjoy solving problems that require systems thinking and architectural trade-offs, and my goal is to build reliable, scalable solutions that improve operational efficiency and enable smarter business decisions.
+      </p>
+    </div>
   </section>
+
+    <!-- EXPERIENCE -->
+     <!-- EXPERIENCE -->
+<section id="experience" class="section section-teal">
+  <div class="container">
+    <h2 class="section-title">Experience</h2>
+
+    <article class="timeline-item">
+      <div class="body">
+        <h3>Web Developer – Graduate Assistant</h3>
+        <div class="time">January 2025- December 2025</div>
+        <ul>
+          <li> Developed and maintained responsive web applications using HTML5, CSS3, and JavaScript, implementing DOM-based interactions and cross-browser compatibility to support academic and administrative platforms.</li>
+          <li> Built and enhanced dynamic UI components and client-side logic, improving usability, accessibility, and responsiveness across desktop and mobile devices.</li>
+          <li> Implemented client-side data handling and validation for web forms, processing structured inputs and JSON responses to reduce invalid submissions and improve data quality.</li>
+          <li> Optimized frontend performance through script cleanup, layout improvements, and adherence to modern web best practices.</li>
+          <li> Collaborated with academic and administrative stakeholders to deliver UI enhancements, resolve defects, and deploy updates in a production environment.</li>
+        </ul>
+
+      </div>
+    </article>
+
+    <article class="timeline-item">
+      <div class="body">
+        <h3>Data analyst - Graduate Research Assistant</h3>
+        <div class="time">March 2024 — December 2024</div>
+
+        <ul>
+          <li>Engineered production-grade ETL pipelines using Python (pandas, NumPy) and SQL to ingest, cleanse, deduplicate, and validate 100K+ financial records, delivering analytics-ready datasets for research workflows.</li>
+          <li>Implemented data quality enforcement mechanisms including schema validation, null handling, consistency checks, and deduplication to ensure high-integrity analytical outputs.</li>
+          <li>Designed and executed SQL-intensive analytical workflows leveraging CTEs, window functions, joins, and aggregations to extract trends and insights from large datasets.</li>
+          <li>Integrated SQL pipelines with Python-based automation to generate recurring research reports, statistical summaries, and reproducible analyses.</li>
+          <li>Collaborated with faculty researchers to translate analytical requirements into structured datasets, metrics, and insights supporting publications and presentations.</li>
+        </ul>
+
+      </div>
+    </article>
+
+    <article class="timeline-item">
+      <div class="body">
+        <h3 class="company">Infosys Ltd</h3>
+        <div class="time">Oct 2020 — Nov 2023</div>
+
+        <div class="roles">
+          <div class="role">
+            <div class="role-header">
+              <h4 class="role-title">Senior Salesforce Data Engineer</h4>
+              <span class="role-time">September 2021 – November 2023</span>
+            </div>
+            <ul class="role-points">
+              <li>Architected Salesforce CRM data solutions using Apex, bulk-safe trigger frameworks, and optimized SOQL to process high-volume Account, Opportunity, and Activity data supporting analytics and revenue reporting.</li>
+              <li>Designed and maintained Salesforce data synchronization pipelines with downstream systems, improving data availability for BI dashboards and reducing reporting latency by ~30–35%.</li>
+              <li>Optimized SOQL queries, trigger execution paths, and batch-safe patterns while enforcing validation rules to reduce data integrity issues and governor-limit exceptions, improving overall CRM data performance by ~30–40%.</li>
+              <li>Engineered SQL- and Python-based ETL pipelines to transform Salesforce data for Power BI and Tableau reporting, supporting recurring business and operational analytics.</li>
+              <li>Led JIRA-driven production triage for data and integration issues, reducing recurring data quality incidents by ~30% through root-cause analysis and corrective fixes.</li>
+            </ul>
+          </div>
+
+          <div class="role">
+            <div class="role-header">
+              <h4 class="role-title">Salesforce Software Engineer</h4>
+              <span class="role-time">Oct 2020 — Aug 2021</span>
+            </div>
+            <ul class="role-points">
+              <li>Developed Salesforce backend automation using Apex classes, triggers, and optimized SOQL to manage structured CRM data across standard and custom objects.</li>
+              <li>Implemented data validation rules, referential integrity checks, and exception handling logic to ensure accurate data ingestion and consistency for downstream SQL-based analytics and reporting.</li>
+              <li>Collaborated with QA and business teams through JIRA-tracked enhancements and defect resolution, supporting stable releases and reducing data rework through efficient triage.</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </article>
+
+  </div>
+</section>
+
+    
+    <!-- PROJECTS -->
+    <section id="projects" class="section section-white">
+      <div class="container">
+        <h2 class="section-title">Projects</h2>
+
+        <div class="projects-grid">
+          <!-- Project card (repeat) -->
+          <article class="project-card">
+            <img src="assets/images/RAG_Project.png" alt="Project 1">
+            <div class="project-body">
+              <h3>AI Chatbot with Retrieval-Augmented Generation (RAG) Pipeline</h3>
+              <p>Designed and implemented a Retrieval-Augmented Generation (RAG) system that integrates LLMs with vector databases to enable document-aware question answering. Built an end-to-end pipeline supporting PDF ingestion, text chunking, embedding generation, semantic retrieval, and grounded LLM responses. Emphasized modular architecture, prompt conditioning, and retrieval accuracy for real-world business use cases.</p>
+              <p> <b>Tech Stack:</b> Python, LangChain/LlamaIndex, Vector Database (Chroma/FAISS), LLM APIs, PDF Parsing, Prompt Engineering</p>
+              <p><b>Related Experience:</b> Extends enterprise data integration and pipeline patterns into AI-assisted information retrieval.</p>
+              <div class="project-links">
+                <a class="link" href="https://github.com/Prasannadpp/RAG-PDF-Question-Answering" target="_blank">GitHub</a>
+              </div>
+            </div>
+          </article>
+
+          <article class="project-card">
+            <img src="assets/images/DataWarehouse-project.png" alt="Project 2">
+            <div class="project-body">
+              <h3>SQL DataWarehouse for Analytics & Reporting</h3>
+              <p>Architected and implemented a SQL-based analytical data warehouse to centralize enterprise reporting and analytics. Designed dimensional data models and built modular ETL workflows to cleanse, transform, and aggregate large datasets into analytics-ready tables optimized for reporting and downstream analysis. </p>
+              <p><b>Tech Stack:</b> SQL, Data Modeling, ETL/ELT, Analytical Queries, Relational Databases</p>
+              <p><b>Related Experience:</b> Builds on CRM analytics and reporting workflows implemented in enterprise environments.</p>
+              <div class="project-links">
+                <a class="link" href="https://github.com/Prasannadpp/SQL-DataWarehouse-Project" target="_blank">GitHub</a>
+              </div>
+            </div>
+          </article>
+
+          <article class="project-card">
+            <img src="assets/images/Salesforce-CRM-Engineering-Project.png" alt="Project 3">
+            <div class="project-body">
+              <h3>Salesforce CRM Engineering: Apex Patterns & Integration Logic</h3>
+              <p>Developed production-grade Salesforce components using Apex, triggers, and SOQL, applying industry-standard design patterns and governor-limit-aware logic. Implemented reusable automation and integration foundations to support scalable CRM workflows and cross-system extensibility.</p>
+              <p><b>Tech Stack:</b> Salesforce Platform, Apex, SOQL, Triggers, Salesforce Automation, REST/SOAP APIs</p>
+              <p><b>Related Experience:</b>Directly informed by production Salesforce engineering and integration work.</p>
+              <div class="project-links">
+                <div>
+                
+              </div>  
+              <a class="link" href="https://github.com/Prasannadpp/salesforce-apex-engineering-patterns" target="_blank">GitHub</a>
+              </div>
+            </div>
+          </article>
+          <article class="project-card">
+            <img src="assets/images/End-to-End Data Pipeline.png" alt="Project 4">
+            <div class="project-body">
+              <h3>End-to-End Data Pipeline for Analytics Workflows </h3>
+              <p>Built a robust, end-to-end data pipeline to automate data ingestion, transformation, validation, and persistence across systems. Emphasized reliability, reusability, and monitoring to ensure consistent delivery of analytics-ready data for reporting and machine learning workflows.</p>
+              <p><b>Tech Stack:</b> Python, SQL, Data Pipelines, Data Validation, Logging & Monitoring</p>
+              <p><b>Related Experience:</b> Reflects real-world ETL, data quality, and pipeline reliability practices.</p>
+              <div class="project-links">
+                <a class="link" href="https://github.com/Prasannadpp/end-to-end-data-pipeline-automation" target="_blank">GitHub</a>
+              </div>
+            </div>
+          </article>
+          <article class="project-card">
+            <img src="assets/images/Customer Churn Analytics.png" alt="Project 5">  
+            <div class="project-body">
+              <h3>Customer Churn Analytics using SQL, Python & ML Insights</h3>
+              <p> Designed a churn analytics workflow to identify customer segments at risk of attrition. Performed SQL-based feature engineering, Python-driven exploratory analysis, and ML-assisted modeling experiments to generate actionable insights and support data-driven retention strategies.</p>
+              <p><b>Tech Stack:</b> SQL, Python (pandas, NumPy), Feature Engineering, Exploratory Analysis, Machine Learning (scikit-learn)</p>
+              <p><b>Related Experience:</b>Inspired by enterprise CRM analytics use cases and data-driven decision support.</p> 
+              <div class="project-links">
+                <a class="link" href="https://github.com/Prasannadpp/customer-churn-analytics-ml" target="_blank">GitHub</a>
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- SKILLS -->
+    <!-- SKILLS -->
+<section id="skills" class="section section-teal">
+  <div class="container">
+    <h2 class="section-title">Skills</h2>
+
+    <div class="skills-wrap">
+
+      <div class="skill-card">
+        <h4>Languages</h4>
+        <ul>
+          <li>Python</li>
+          <li>SQL</li>
+          <li>Apex</li>
+          <li>JavaScript</li>
+          <li>HTML5</li>
+          <li>CSS3</li>
+        </ul>
+      </div>
+
+      <div class="skill-card">
+        <h4>Frameworks & Libraries</h4>
+        <ul>
+          <li>LangChain / LlamaIndex</li>
+          <li>pandas</li>
+          <li>NumPy</li>
+          <li>scikit-learn</li>
+          <li>Salesforce Apex Frameworks</li>
+        </ul>
+      </div>
+
+      <div class="skill-card">
+        <h4>Data Engineering & Analytics</h4>
+        <ul>
+          <li>ETL / ELT Pipelines</li>
+          <li>Data Ingestion & Transformation</li>
+          <li>Analytical SQL (CTEs, Window Functions)</li>
+          <li>Data Modeling (Dimensional / Analytics)</li>
+          <li>Data Validation & Quality Engineering</li>
+          <li>Batch & Incremental Processing</li>
+        </ul>
+      </div>
+
+      <div class="skill-card">
+        <h4>Salesforce Platform & CRM Engineering</h4>
+        <ul>
+          <li>Salesforce Platform Architecture</li>
+          <li>Apex Classes & Triggers</li>
+          <li>SOQL Optimization</li>
+          <li>Bulk-Safe & Governor-Limit-Aware Design</li>
+          <li>Salesforce Automation & Validation Rules</li>
+          <li>CRM Data Modeling</li>
+        </ul>
+      </div>
+
+      <div class="skill-card">
+        <h4>Salesforce & Data Engineering (Hybrid)</h4>
+        <ul>
+          <li>CRM Data Pipelines</li>
+          <li>Salesforce Data Extraction & Transformation</li>
+          <li>CRM-to-Analytics Integration</li>
+          <li>SQL & Python-Based Reporting Pipelines</li>
+          <li>BI-Ready Dataset Enablement</li>
+        </ul>
+      </div>
+
+      <div class="skill-card">
+        <h4>AI, ML & Applied Intelligence</h4>
+        <ul>
+          <li>Retrieval-Augmented Generation (RAG)</li>
+          <li>Vector Databases & Semantic Search</li>
+          <li>LLM Integration & Prompt Engineering</li>
+          <li>ML-Assisted Analytics</li>
+          <li>Feature Engineering</li>
+        </ul>
+      </div>
+
+      <div class="skill-card">
+        <h4>Databases & Storage</h4>
+        <ul>
+          <li>PostgreSQL</li>
+          <li>MySQL</li>
+          <li>Salesforce Data Model</li>
+          <li>Analytical Tables & Views</li>
+          <li>Vector Databases (Chroma, FAISS)</li>
+        </ul>
+      </div>
+
+      <div class="skill-card">
+        <h4>Cloud & DevOps</h4>
+        <ul>
+          <li>AWS (S3, EC2 – basic usage)</li>
+          <li>Docker (Local Development)</li>
+          <li>CI/CD Awareness</li>
+          <li>Environment-Based Configuration</li>
+        </ul>
+      </div>
+
+      <div class="skill-card">
+        <h4>Integration & APIs</h4>
+        <ul>
+          <li>REST APIs</li>
+          <li>API-Based System Integration</li>
+          <li>JSON Data Processing</li>
+          <li>Authentication & Secure Data Access</li>
+        </ul>
+      </div>
+
+      <div class="skill-card">
+        <h4>Tooling & Workflow</h4>
+        <ul>
+          <li>Git & Version Control</li>
+          <li>JIRA</li>
+          <li>Logging & Error Handling</li>
+          <li>Data & Pipeline Monitoring</li>
+          <li>Production Debugging</li>
+        </ul>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
+    <!-- CERTIFICATIONS (3 per row) -->
+    <section id="certifications" class="section section-white">
+        <div class="container">
+          <h2 class="section-title">Certifications</h2>
+      
+          <div class="cert-grid"></div>
+      
+            <!-- CERT 1 -->
+            <div class="cert-body">
+              <h4>Salesforce Certified Agentforce Specialist</h4>
+              <a class="cert-link" href="assets/Certificates/Agentforce.pdf" target="_blank">
+                View Certificate
+              </a>
+            </div>
+
+            <!-- CERT 2 -->
+            <div class="cert-body">
+              <h4>Machine Learning with Python</h4>
+              <a class="cert-link" href="assets/Certificates.pdf" target="_blank">
+                View Certificate
+              </a>
+            </div>
+
+            <!-- CERT 3 -->
+            <div class="cert-body">
+              <h4>Introduction to Data Engineering</h4>
+              <a class="cert-link" href="assets/Certificates.pdf" target="_blank">
+                View Certificate
+              </a>
+            </div>
+      
+            <!-- CERT 4 -->
+            <div class="cert-body">
+              <h4>Microsoft Azure Fundamentals</h4>
+              <a class="cert-link" href="assets/Certificates/Microsoft Azure Udemy.pdf" target="_blank">
+                View Certificate
+              </a>
+            </div>
+
+            <!-- CERT 5-->
+            <div class="cert-body">
+                <h4>Data Analysis Using SQL</h4>
+                <a class="cert-link" href="assets/Certificates/Data Analysis by SQL.pdf" target="_blank">
+                  View Certificate
+                </a>
+              </div>
+        
+              <!-- CERT 6 -->
+              <div class="cert-body">
+                <h4>Google IT Support</h4>
+                <a class="cert-link" href="assets/Certificates/Google IT Support Certificate.pdf" target="_blank">
+                  View Certificate
+                </a>
+              </div>
+      
+            <!-- Add more below as needed -->
+            <!--
+            <div class="cert-body">
+              <h4>Course Name</h4>
+              <a class="cert-link" href="assets/filename.pdf" target="_blank">View Certificate</a>
+            </div>
+            -->
+      
+          </div>
+        </div>
+      </section>
+      
+    <!-- CONTACT -->
+    <section id="contact" class="section section-teal">
+      <div class="container contact-center">
+        <h2 class="section-title">Get in touch</h2>
+
+        <p class="contact-text">I’m open to roles and collaborations — reach out and let’s talk.</p>
+
+        <div class="contact-icons">
+          <a href="https://github.com/Prasannadpp" target="_blank" aria-label="GitHub">
+            <img src="https://cdn.jsdelivr.net/npm/simple-icons@v5/icons/github.svg" alt="GitHub">
+          </a>
+          <a href="https://www.linkedin.com/in/durgaprasanna8112/" target="_blank" aria-label="LinkedIn">
+            <img src="https://cdn.jsdelivr.net/npm/simple-icons@v5/icons/linkedin.svg" alt="LinkedIn">
+          </a>
+          <a href="mailto:durgaprasannadpp811@gmail.com" aria-label="Email">
+            <img src="https://cdn.jsdelivr.net/npm/simple-icons@v5/icons/gmail.svg" alt="Email">
+          </a>
+        </div>
+
+        <p class="footer-copy">© <span id="year"></span> Prasanna Peddireddi</p>
+      </div>
+    </section>
+
+  </main>
 
   <script src="script.js"></script>
 </body>
